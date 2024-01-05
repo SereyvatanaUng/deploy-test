@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  height: 25%;
+  padding: 1em 0 0.5em 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.topic {
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+}
+
+@media screen and (min-width: 500px) {
+  .topic {
+    font-size: 2.5rem;
+  }
+}

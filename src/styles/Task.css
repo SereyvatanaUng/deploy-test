@@ -1,0 +1,82 @@
+.task {
+  width: 100%;
+  padding: 1em 0.5em;
+  gap: 1em;
+  word-break: break-all;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 0.3125rem;
+  border-bottom: 4px solid var(--blue-gray);
+  background: #fff;
+  box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.task:hover {
+  background-color: var(--cloudy-white);
+}
+
+.task--complete {
+  border-bottom: 4px solid var(--faded-blue);
+}
+
+.task__description {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-grow: 1;
+}
+
+.task__btn {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  opacity: 0.7;
+}
+
+.task__btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.task__title {
+  flex-grow: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.title-complete {
+  color: var(--medium-gray);
+  text-decoration: line-through;
+}
+
+.task--edit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task--input {
+  width: 80%;
+  padding: 0.5em;
+  outline: none;
+
+  border: none;
+  border-bottom: 1px solid var(--blue-gray);
+  background: transparent;
+}
+
+.confirm-btn {
+  display: flex;
+  gap: 2em;
+  opacity: 0.7;
+}
+
+@media screen and (min-width: 500px) {
+  .task {
+    padding: 1.5em 1em;
+  }
+}
